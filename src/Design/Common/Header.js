@@ -1,47 +1,45 @@
 import React from 'react';
-import {Link} from "react-router-dom";
-
 function Header() {
 return(
 <div>
 <div class="container-fluid bg-success bg-danger fixed-top navigation">
         <nav class="navbar navbar-expand-sm ">
             <div class="container-fluid">
-                <Link class="navbar-brand" to="/home">Valorant</Link>
+                <a class="navbar-brand" href="home">Valorant</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
                 <ul class="navbar-nav nav-pills">
                     <li class="nav-item ">
-                        <Link to="/home" class="nav-link active bg-danger">Home</Link>
+                        <a href="home" class="nav-link active bg-danger">Home</a>
                     </li>
                     <li class="nav-item">
-                        <Link to="/home#patch" class="nav-link">Patch Notes</Link>
+                        <a href="home#patch" class="nav-link">Patch Notes</a>
                     </li>
                     <li class="nav-item">
-                        <Link to="/home#popular-maps" class="nav-link">Popular Maps</Link>
+                        <a href="home#popular-maps" class="nav-link">Popular Maps</a>
                     </li>
                     <li class="nav-item">
-                        <Link to="/download" class="nav-link">Download</Link>
+                        <a href="download" class="nav-link">Download</a>
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <Link  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other</Link>
+                        <a  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other</a>
                         <ul class="dropdown-menu">
                             <li class="">
-                                <Link to="/weapons" class="dropdown-item">weapons</Link>
+                                <a href="weapons" class="dropdown-item">weapons</a>
                             </li>
                             <li class="">
-                                <Link to="/map" class="dropdown-item">Maps</Link>
+                                <a href="map" class="dropdown-item">Maps</a>
                             </li>
                             <li class="">
-                                <Link to="#" class="dropdown-item">sjhgh</Link>
+                                <a href="#" class="dropdown-item">sjhgh</a>
                             </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <Link to="/home#about" class="nav-link">About US</Link>
+                        <a href="home#about" class="nav-link">About US</a>
                     </li>
                 </ul>
     
