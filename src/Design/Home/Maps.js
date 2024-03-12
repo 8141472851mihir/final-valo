@@ -11,7 +11,7 @@ return(
                 <h3 class="renew-title">Lotus</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" ><button class="btn button-49">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49">View</button></a>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@ return(
                 <h3 class="renew-title">Split</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" ><button class="btn button-49">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49">View</button></a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@ return(
                 <h3 class="renew-title">Pearl</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" ><button class="btn button-49">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49">View</button></a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@ return(
                 <h3 class="renew-title">Fracture</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" ><button class="btn button-49">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49">View</button></a>
             </div>
         </div>
     </div>

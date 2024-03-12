@@ -11,7 +11,7 @@ return(
                         <h3 class="renew-title">Patch 6.07</h3>
                         <p class="renew-description">
                         </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" ><button class="btn button-49">View</button></a>
+                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" target="_blank"><button class="btn button-49">View</button></a>
                     </div>
                 </div>
                 
@@ -25,7 +25,7 @@ return(
                         <h3 class="renew-title">Patch 6.06</h3>
                         <p class="renew-description">
                         </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-06/" ><button class="btn button-49">View</button></a>
+                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-06/" target="_blank"><button class="btn button-49">View</button></a>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@ return(
                         <h3 class="renew-title">Patch 6.05</h3>
                         <p class="renew-description">
                         </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" ><button class="btn button-49">View</button></a>
+                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49">View</button></a>
                     </div>
                 </div>
             </div>
@@ -51,12 +51,12 @@ return(
                         <h3 class="renew-title">Patch 6.04</h3>
                         <p class="renew-description">
                         </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" ><button class="btn button-49">View</button></a>
+                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank"><button class="btn button-49">View</button></a>
                     </div>
                 </div>
             </div>
         <div class="row">
-            <a class="text-center  " href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" ><button class="btn btn-info other-button">Other Patch Notes</button></a>
+            <a class="text-center  " href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank"><button class="btn btn-info other-button">Other Patch Notes</button></a>
         </div>
 </>
 )
