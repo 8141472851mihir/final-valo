@@ -23,17 +23,17 @@ return(
                         <Link to="/home#popular-maps" class="nav-link">Popular Maps</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="download" class="nav-link">Download</Link>
+                        <Link to="/download" class="nav-link">Download</Link>
                     </li>
                     
                     <li class="nav-item dropdown">
                         <Link  class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other</Link>
                         <ul class="dropdown-menu">
                             <li class="">
-                                <Link to="weapons" class="dropdown-item">weapons</Link>
+                                <Link to="/weapons" class="dropdown-item">weapons</Link>
                             </li>
                             <li class="">
-                                <Link to="map" class="dropdown-item">Maps</Link>
+                                <Link to="/map" class="dropdown-item">Maps</Link>
                             </li>
                             <li class="">
                                 <Link to="#" class="dropdown-item">sjhgh</Link>

@@ -1,6 +1,7 @@
 import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
 import downloadimage from "../../images/d-home.mp4";
+import {Link} from "react-router-dom";
 
 function Download() {
   return (
@@ -14,8 +15,8 @@ function Download() {
                   </video>
               <div class="carousel-caption d-md-block d-none">
                 <p style={{marginBottom: '5vh '}}>A 5v5 Character-based tactical shooter </p>
-                <h3 style={{marginBottom: '10vh'}}><a href="home.html"><img src="https://fontmeme.com/permalink/230425/21ebc8446a8f706151071ee4a51e6be3.png" alt="valorant-font" border="0" /></a></h3>
-                <a href="#download" ><button class="btn button-49 ">Download Now</button></a>
+                <h3 style={{marginBottom: '10vh'}}><Link to="/home.html"><img src="https://fontmeme.com/permalink/230425/21ebc8446a8f706151071ee4a51e6be3.png" alt="valorant-font" border="0" /></Link></h3>
+                <Link to="/download" ><button class="btn button-49 ">Download Now</button></Link>
               </div>  
             </div>
           </div>
@@ -24,17 +25,17 @@ function Download() {
     <div id="download" class="container text-light my-5 text-center p-md-0 p-5 ">
         <div class="row my-3">
             <p> <span><i class="fa-brands fa-windows me-2"></i></span> windows</p>
-            <a class="text-center  " onClick={() => alert('Download Started..')}><button class="btn btn-info other-button">Download</button></a>
+            <Link class="text-center  " onClick={() => alert('Download Started..')}><button class="btn btn-info other-button">Download</button></Link>
 
         </div>
         <div class="row   my-3">
             <p> <span><i class="fa-brands fa-apple me-2"></i></span> apple</p>
-            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></a>
+            <Link class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></Link>
 
         </div>
         <div class="row  my-3">
             <p> <span><i class="fa-brands fa-linux me-2"></i></span> linux</p>
-            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></a>
+            <Link class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></Link>
 
         </div>
     </div>
