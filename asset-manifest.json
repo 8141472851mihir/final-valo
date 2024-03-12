@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/final-valo/static/css/main.56c61317.css",
-    "main.js": "/final-valo/static/js/main.2e23b0fa.js",
+    "main.js": "/final-valo/static/js/main.11bab32f.js",
     "static/js/453.023d1b18.chunk.js": "/final-valo/static/js/453.023d1b18.chunk.js",
     "static/media/d-home.mp4": "/final-valo/static/media/d-home.d09938c582e341bf48c0.mp4",
     "index.html": "/final-valo/index.html",
     "main.56c61317.css.map": "/final-valo/static/css/main.56c61317.css.map",
-    "main.2e23b0fa.js.map": "/final-valo/static/js/main.2e23b0fa.js.map",
+    "main.11bab32f.js.map": "/final-valo/static/js/main.11bab32f.js.map",
     "453.023d1b18.chunk.js.map": "/final-valo/static/js/453.023d1b18.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56c61317.css",
-    "static/js/main.2e23b0fa.js"
+    "static/js/main.11bab32f.js"
   ]
 }
