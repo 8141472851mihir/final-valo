@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/final-valo/static/css/main.56c61317.css",
+    "main.js": "/final-valo/static/js/main.ab0ac475.js",
+    "static/js/453.023d1b18.chunk.js": "/final-valo/static/js/453.023d1b18.chunk.js",
+    "static/media/d-home.mp4": "/final-valo/static/media/d-home.d09938c582e341bf48c0.mp4",
+    "index.html": "/final-valo/index.html",
+    "main.56c61317.css.map": "/final-valo/static/css/main.56c61317.css.map",
+    "main.ab0ac475.js.map": "/final-valo/static/js/main.ab0ac475.js.map",
+    "453.023d1b18.chunk.js.map": "/final-valo/static/js/453.023d1b18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56c61317.css",
+    "static/js/main.ab0ac475.js"
+  ]
+}
