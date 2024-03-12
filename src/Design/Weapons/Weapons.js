@@ -39,7 +39,7 @@ const Weapons = () => {
     <div class="container">
         <h1 class="col-12 text-center text-light ">Valorant Arsenal</h1>
     </div>
-    <div class="container text-light border" >
+    <div class="container text-light" >
         <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
             {weapons.map((weapon) => (
             <div key={weapon.uuid} class="weapon-card col-md-6 col-12 text-center p-md-5 ">

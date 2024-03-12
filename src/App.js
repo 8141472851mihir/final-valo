@@ -6,6 +6,7 @@ import Weapons from "./Design/Weapons/Weapons.js";
 function App() {
   return (
     <div>
+      
       <Home/>
       <Download/>
       <Weapons/>  
