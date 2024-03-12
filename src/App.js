@@ -6,16 +6,18 @@ import Weapons from "./Design/Weapons/Weapons.js";
 function App() {
   return (
     <div>
-      <Router>
+      {/* <Router>
         <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/final-valo" element={<Home/>}/>
-        <Route path="final-valo/Home" element={<Home/>}/>
-        <Route path="final-valo/Weapons" element={<Weapons/>}/>
-        <Route path="final-valo/Download" element={<Download/>}/>
+        <Route path="/final-valo/Home" element={<Home/>}/>
+        <Route path="/final-valo/Weapons" element={<Weapons/>}/>
+        <Route path="/final-valo/Download" element={<Download/>}/>
         </Routes>
-      </Router>
-      
+      </Router> */}
+    <Home/>
+    <Weapons/>  
+    <Download/>
     </div>
   );
 }
