@@ -9,8 +9,8 @@ function App() {
       <Router>
         <Routes>
         <Route path="/" element={<Home/>}/>
-        {/* <Route path="Home" element={<Home/>}/> */}
-        {/* <Route path="final-valo/Weapons" element={<Weapons/>}/>
+        {/* <Route path="final-valo/Home" element={<Home/>}/>
+        <Route path="final-valo/Weapons" element={<Weapons/>}/>
         <Route path="final-valo/Download" element={<Download/>}/> */}
         </Routes>
       </Router>
