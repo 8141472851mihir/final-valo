@@ -3,7 +3,7 @@ function About() {
 return(
 <>
     <div class="row">
-        <div class="col-md-6 p-4  ">
+        <div class="col-md-6 p-4  font_secondary">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel est possimus maiores sint sapiente unde hic accusantium ipsa, quis ad, voluptatem reiciendis ducimus excepturi, et itaque voluptatum magni sunt?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel est possimus maiores sint sapiente unde hic accusantium ipsa, quis ad, voluptatem reiciendis ducimus excepturi, et itaque voluptatum magni sunt?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel est possimus maiores sint sapiente unde hic accusantium ipsa, quis ad, voluptatem reiciendis ducimus excepturi, et itaque voluptatum magni sunt?</p>

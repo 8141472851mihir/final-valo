@@ -1,11 +1,22 @@
+@import url('https://fonts.cdnfonts.com/css/valorant');
 body{
   background-color: #111823;
-}   
+}  
+.font_secondary{
+  font-family: "Space Grotesk", sans-serif !important;
+  letter-spacing: 0.5px;
+} 
+.font_primary{
+  font-family: 'VALORANT', sans-serif !important; 
+}
 .navigation{
 /* border-bottom:1px solid  #111823 ; */
 /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.nav_effect:hover{
+  color:black !important;
 }
 .titles{
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -111,7 +122,7 @@ background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
 border: 0;
 color: #fff;
 letter-spacing: 3px;
-box-shadow: 6px 0px 0px #00E6F6;
+box-shadow: 6px 0px 0px #ffffff;
 outline: transparent;
 position: relative;
 user-select: none;
@@ -134,8 +145,8 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+background: linear-gradient(45deg, transparent 3%, #ffffff 3%, #ffffff 5%, #FF013C 5%);
+text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #ffffff;
 clip-path: var(--slice-0);
 }
 

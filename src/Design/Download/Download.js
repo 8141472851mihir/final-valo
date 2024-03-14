@@ -24,17 +24,17 @@ function Download() {
     <div id="download" class="container text-light my-5 text-center p-md-0 p-5 ">
         <div class="row my-3">
             <p> <span><i class="fa-brands fa-windows me-2"></i></span> windows</p>
-            <a class="text-center  " onClick={() => alert('Download Started..')}><button class="btn btn-info other-button">Download</button></a>
+            <a class="text-center  " onClick={() => alert('Download Started..')}><button class="btn btn-light rounded-0 other-button">Download</button></a>
 
         </div>
         <div class="row   my-3">
             <p> <span><i class="fa-brands fa-apple me-2"></i></span> apple</p>
-            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></a>
+            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-light rounded-0 other-button">Download</button></a>
 
         </div>
         <div class="row  my-3">
             <p> <span><i class="fa-brands fa-linux me-2"></i></span> linux</p>
-            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-info other-button">Download</button></a>
+            <a class="text-center  " onClick={() => alert('Available Soon..')}><button class="btn btn-light rounded-0 other-button">Download</button></a>
 
         </div>
     </div>
