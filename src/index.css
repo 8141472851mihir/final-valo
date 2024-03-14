@@ -5,7 +5,7 @@
 body{
   background-color: #111823;
 }  
-
+/* Font Classes ------------------------------------*/
 .font_secondary{
   font-family: "Space Grotesk", sans-serif !important;
   letter-spacing: 0.5px;
@@ -13,133 +13,80 @@ body{
 .font_primary{
   font-family: 'VALORANT', sans-serif !important; 
 }
-.navigation{
-/* border-bottom:1px solid  #111823 ; */
-/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-/* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
-box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+.font_body_small{
+  font-size: 14px;
 }
-.nav_effect:hover{
-  color:black !important;
+.font_body{
+  font-size: 16px;
 }
-.nav_effect:active{
-  color:black !important;
+.font_title{
+  font-size: 24px;
 }
+/* COLOR CSS ------------------------------------*/
 .bg_color_danger{
   background-color: #FF013C;
 }
 .text_color_danger{
   color:#FF013C;
 }
+.bg_dark{
+  background-color: #161f2d;
+}
+.hover_white:hover{
+ color: white;
+}
+/* Border */
+.border_light{
+  border:0.5px solid rgba(125, 125, 125, 0.491);
+}
+/* Navbar CSS ------------------------------------*/
+/* .navigation{
+border-bottom:1px solid  #111823 ;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+} */
+.nav_effect:hover{
+  color:black !important;
+}
+.nav_effect:active{
+  color:black !important;
+}
+
 .titles{
 box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 /* box-shadow: rgba(240, 46, 46, 0.4) 0px 5px, rgba(240, 46, 46, 0.3) 0px 10px, rgba(240, 46, 46, 0.2) 0px 15px, rgba(240, 46, 46, 0.1) 0px 20px, rgba(240, 46, 46, 0.05) 0px 25px; */
 }
-.abc img{
-  /* width: 100%;
-  height: 60%; */
+
+/* Card CSS ------------------------------------------- */
+.card_text_wrap{
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-.renew-card {
-  background-color: #161f2d;
-  /* margin: 20px; */
-  display: flex;
-  flex-direction: column;
-  /* width: 300px; */
-  height: 350px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-  transition: transform 0.2s ease-in-out;
+.card_text_wrap.expanded{
+  white-space: normal;
+  height: auto;
 }
-.abc:hover{
-  /* transform: scaleX(0.9); */
-  transform: scale(1.05);
+.abc:hover {
+  transition: 0.5s;
+  transform: scaleY(1.08);
+  
+  /* cursor: pointer; */
   /* transform: rotate(1deg); */ 
 }
 
-
-.renew-image img {
-  width: 100%;
-  height: 100%;
-  /* object-fit: cover; */
-}
-.renew--content {
-  padding: 20px;
-}
-
-.renew-title {
-  margin: 0 0 10px;
-  font-size: 24px;
-  font-weight: 600;
-  color: #a6a6a6;
-}
-
-.renew-description {
-  margin: 0 0 20px;
-  font-size: 14px;
-  line-height: 1.4;
-  color: #555;
-}  
-
-
-/* CSS */
-.other-button {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000;
-  cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
-  position: relative;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-.other-button:active {
-  box-shadow: 0px 0px 0px 0px;
-  top: 5px;
-  left: 5px;
-}
-
-@media (min-width: 768px) {
-  .other-button {
-    padding: 0.25em 0.75em;
-  }
-}
-
-.other-button:active {
-box-shadow: 0px 0px 0px 0px;
-top: 5px;
-left: 5px;
-}
-
-@media (min-width: 768px) {
-.other-button {
-  padding: 0.25em 0.75em;
-}
-}
-
+/* Button CSS ------------------------------------------------------ */
 .button-49,.button-49:after {
-width: 150px;
-height: 50px;
-line-height: 50px;
-font-size: 20px;
+width: 100px;
+/* height: 50px; */
+box-shadow: 3px 0 0px #ffffff;
 background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
 border: 0;
-color: #fff;
-letter-spacing: 3px;
-box-shadow: 6px 0px 0px #ffffff;
-outline: transparent;
 position: relative;
-user-select: none;
--webkit-user-select: none;
-touch-action: manipulation;
+/* user-select: none; */
+/* -webkit-user-select: none; */
+/* touch-action: manipulation; */
 }
 
 .button-49:after {
@@ -149,17 +96,16 @@ touch-action: manipulation;
 --slice-3: inset(10% -6px 85% 0);
 --slice-4: inset(40% -6px 43% 0);
 --slice-5: inset(80% -6px 5% 0);
-
 content: 'view';
-display: block;
+display: inline;
 position: absolute;
 top: 0;
 left: 0;
 right: 0;
 bottom: 0;
 background: linear-gradient(45deg, transparent 3%, #ffffff 3%, #ffffff 5%, #FF013C 5%);
-text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #ffffff;
-clip-path: var(--slice-0);
+text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #ffffff;
+clip-path: var(--slice-0);  
 }
 .button-49:hover{
   color:black !important;
@@ -168,7 +114,7 @@ clip-path: var(--slice-0);
 animation: 1s glitch;
 animation-timing-function: steps(2, end);
 }
-
+/* Button animation */
 @keyframes glitch {
 0% {
   clip-path: var(--slice-1);
@@ -216,14 +162,14 @@ animation-timing-function: steps(2, end);
 }
 }
 
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 .button-49,
 .button-49:after {
   width: 200px;
   height: 50px;
   line-height: 30px;
 }
-}
+} */
 #bgtext {
 position: relative;
 border-bottom: 5px solid #FF013C;
@@ -261,8 +207,6 @@ content: url(https://fontmeme.com/permalink/230424/4e742bed5daca9290df71d8ecf5c3
 /* background-repeat: no-repeat;
 background-size: 300px 100px; */
 text-align: center;
-/* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; */
-
 -webkit-text-stroke: #FF013C 2px;
 -webkit-text-fill-color: transparent;
 color: rgb(255, 255, 255);
@@ -361,3 +305,29 @@ color: #FF013C;
 .weapon-inner-card:hover .cover-overlay {
   opacity: 0.8;
 }
+
+/* Carousal CSS */
+.carousel_container{
+  position: relative;
+}
+.carousal_btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 40;
+}
+@media  and (max-width:768px) {
+  .carousal_btn a{
+    width:50px;
+  }
+}
+/*
+.carousel::before{
+  content: '';
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#111823,#11182337 10%,#11182337 80%,#111823);
+  z-index: 50;
+} */
