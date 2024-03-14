@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/final-valo/static/css/main.a5fe45f5.css",
-    "main.js": "/final-valo/static/js/main.eadb57db.js",
+    "main.js": "/final-valo/static/js/main.b89839d8.js",
     "static/js/453.ec55b2e5.chunk.js": "/final-valo/static/js/453.ec55b2e5.chunk.js",
     "static/media/Harbor_Q_v001_web.mp4": "/final-valo/static/media/Harbor_Q_v001_web.b55eb0e71cb32a4d3a3c.mp4",
     "static/media/Chamber_C_rework_web.mp4": "/final-valo/static/media/Chamber_C_rework_web.c4d335a7a96b14c1655e.mp4",
@@ -98,11 +98,11 @@
     "static/media/Jett_Q_v001_web.mp4": "/final-valo/static/media/Jett_Q_v001_web.78c0a08e4e0285e432e9.mp4",
     "index.html": "/final-valo/index.html",
     "main.a5fe45f5.css.map": "/final-valo/static/css/main.a5fe45f5.css.map",
-    "main.eadb57db.js.map": "/final-valo/static/js/main.eadb57db.js.map",
+    "main.b89839d8.js.map": "/final-valo/static/js/main.b89839d8.js.map",
     "453.ec55b2e5.chunk.js.map": "/final-valo/static/js/453.ec55b2e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a5fe45f5.css",
-    "static/js/main.eadb57db.js"
+    "static/js/main.b89839d8.js"
   ]
 }
