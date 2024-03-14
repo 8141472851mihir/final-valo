@@ -42,7 +42,7 @@ const Maps = () => {
     <Header/>
     <div class="mt-5 pt-5">
     <div class="container">
-        <h1 class="col-12 text-center text-light ">Valorant map</h1>
+        <h1 class="col-12 text-center text-light ">Valorant Maps</h1>
     </div>
     <div class="container text-light" >
         <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
@@ -54,11 +54,11 @@ const Maps = () => {
                 </div>
                  <div class="weapon-info">
                   <h3 class="weapon-name float-center">{map.displayName}</h3>
-                  <span class="float-end"><button class="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></span>
+                  <span class="float-end"><button class="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></span>
                 </div>
                 <div class="cover-overlay text-dark">
-                    <p class="p-2 font-weight-bold text-danger text-uppercase ">{map.description}</p>
-                    <div class="float-end"><button class="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></div>
+                    <p class="p-2 font-weight-bold text-danger text-uppercase ">{map.displayName}</p>
+                    <div class="float-end"><button class="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></div>
                 </div> 
               </div>
             </div>
