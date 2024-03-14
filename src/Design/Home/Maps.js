@@ -11,7 +11,7 @@ return(
                 <h3 class="renew-title font_primary ">Lotus</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 font_secondary ">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 rounded-0 font_secondary ">View</button></a>
             </div>
         </div>
     </div>
@@ -24,7 +24,7 @@ return(
                 <h3 class="renew-title font_primary">Split</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 font_secondary">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 rounded-0 font_secondary">View</button></a>
             </div>
         </div>
     </div>
@@ -37,7 +37,7 @@ return(
                 <h3 class="renew-title font_primary">Pearl</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 font_secondary">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 rounded-0 font_secondary">View</button></a>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@ return(
                 <h3 class="renew-title font_primary">Fracture</h3>
                 <p class="renew-description">
                 </p>
-                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 font_secondary">View</button></a>
+                <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="btn button-49 rounded-0 font_secondary">View</button></a>
             </div>
         </div>
     </div>
