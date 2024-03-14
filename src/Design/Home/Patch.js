@@ -1,64 +1,31 @@
 import React from 'react';
+import Card from '../../components/Card';
 function Patch() {
-return(
-<>
-<div class="col-md-3 my-3 my-sm-4 abc" >
-                <div class="renew-card rounded-0 ">
-                    <div class="renew-image">
-                        <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02ca659981a0977b/64307aa70afb1c108e793d6d/04112023_VALPatchNotes607_Patch_Notes_Highlights_6_07.jpg"/>
-                    </div>
-                    <div class="renew--content">
-                        <h3 class="renew-title font_primary">Patch 6.07</h3>
-                        <p class="renew-description">
-                        </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" target="_blank"><button class="rounded-0 btn button-49 font_secondary">View</button></a>
+    return (
+        <>
+            <div id="patch" class="container  my-5 mb-0">
+                <div class="row">
+                    <h1 class="border-bottom text_color_danger font_primary">Patch Notes</h1>
+                </div>
+                <div class="row mt-5">
+                    <Card imgSrc="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02ca659981a0977b/64307aa70afb1c108e793d6d/04112023_VALPatchNotes607_Patch_Notes_Highlights_6_07.jpg" title="Patch 6.07" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" description="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies.Each map is a playground to showcas" />
+
+                    <Card imgSrc="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02ca659981a0977b/64307aa70afb1c108e793d6d/04112023_VALPatchNotes607_Patch_Notes_Highlights_6_07.jpg" title="Patch 6.07" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" description="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies.Each map is a playground to showcas" />
+
+                    <Card imgSrc="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02ca659981a0977b/64307aa70afb1c108e793d6d/04112023_VALPatchNotes607_Patch_Notes_Highlights_6_07.jpg" title="Patch 6.07" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" description="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies.Each map is a playground to showcas" />
+
+                    <Card imgSrc="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt02ca659981a0977b/64307aa70afb1c108e793d6d/04112023_VALPatchNotes607_Patch_Notes_Highlights_6_07.jpg" title="Patch 6.07" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-07/" description="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies.Each map is a playground to showcas" />
+
+                    <div class="row mt-5">
+                        <span className='text-end'>
+                            <a className="text-end text_color_danger font_secondary hover_white font_body" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank">More Patch Notes</a>
+                        </span>
                     </div>
                 </div>
-                
+
             </div>
-            <div class="col-md-3 my-3 my-sm-4 abc" >
-                <div class="renew-card rounded-0 ">
-                    <div class="renew-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRromlEQQ5AD7AY0O8QkwAqmQ4-09jN7bVdrYYjiLEIwqXCjcXyG_yGxR-vDLZa1vzBbBs&usqp=CAU"/>
-                    </div>
-                    <div class="renew--content">
-                        <h3 class="renew-title font_primary">Patch 6.06</h3>
-                        <p class="renew-description">
-                        </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-06/" target="_blank"><button class="rounded-0 btn button-49 font_secondary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 my-3 my-sm-4 abc" >
-            <div class="renew-card rounded-0 ">
-                    <div class="renew-image">
-                        <img src="https://dotesports.com/wp-content/uploads/2023/03/06144029/gekko-green.png?w=1200"/>
-                    </div>
-                    <div class="renew--content">
-                        <h3 class="renew-title font_primary">Patch 6.05</h3>
-                        <p class="renew-description">
-                        </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-05/" target="_blank"><button class="rounded-0 btn button-49 font_secondary">View</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 my-3 my-sm-4 abc" >
-            <div class="renew-card rounded-0 ">
-                    <div class="renew-image">
-                        <img src="https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt049be1a61da2bb65/6405df4fa8c2d41089c38a6d/Patch_Notes_Highlights_6_04_EN.jpg"/>
-                    </div>
-                    <div class="renew--content">
-                        <h3 class="renew-title font_primary">Patch 6.04</h3>
-                        <p class="renew-description">
-                        </p>
-                        <a href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank"><button class="rounded-0 btn button-49 font_secondary">View</button></a>
-                    </div>
-                </div>
-            </div>
-        <div class="row">
-            <a class="text-center  " href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank"><button class="rounded-0 btn btn-info other-button font_secondary">Other Patch Notes</button></a>
-        </div>
-</>
-)
+
+        </>
+    )
 }
 export default Patch;
