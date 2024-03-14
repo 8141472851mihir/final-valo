@@ -3,31 +3,31 @@ import {Link} from "react-router-dom";
 function Header() {
 return(
 <div>
-<div class="container-fluid bg-success bg-danger fixed-top navigation">
+<div class="container-fluid bg_color_danger fixed-top navigation">
         <nav class="navbar navbar-expand-sm ">
-            <div class="container-fluid">
+            <div class="container-fluid ">
                 <Link class="navbar-brand font_primary text-white " to="/final-valo">Valorant</Link>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="navbar-nav nav-pills font_secondary text-white nav_effect">
+                <ul class="navbar-nav font_secondary text-white nav_effect ">
                     <li class="nav-item ">
-                        <Link to="/final-valo" class="nav-link active bg-danger text-white nav_effect">Home</Link>
+                        <Link to="/final-valo" class="  mx-lg-2 nav-link active bg-transparent text-white nav_effect">Home</Link>
                     </li>
                     <li class="nav-item">
-                        <a href="/final-valo/#patch" class="nav-link text-white nav_effect">Patch Notes</a>
+                        <a href="/final-valo/#patch" class="  mx-lg-2 nav-link text-white nav_effect">Patch Notes</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/final-valo/#popular-maps" class="nav-link text-white nav_effect">Popular Maps</a>
+                        <a href="/final-valo/#popular-maps" class="  mx-lg-2 nav-link text-white nav_effect">Popular Maps</a>
                     </li>
                     <li class="nav-item">
-                        <Link to="/final-valo/download" class="nav-link text-white nav_effect">Download</Link>
+                        <Link to="/final-valo/download" class="  mx-lg-2 nav-link text-white nav_effect">Download</Link>
                     </li>
                     
                     <li class="nav-item dropdown">
-                        <Link  class="nav-link dropdown-toggle text-white nav_effect" data-bs-toggle="dropdown">Other</Link>
-                        <ul class="dropdown-menu">
+                        <Link  class="  mx-lg-2 nav-link dropdown-toggle text-white nav_effect" data-bs-toggle="dropdown">Other</Link>
+                        <ul class="dropdown-menu rounded-0">
                             <li class="">
                                 <Link to="/final-valo/weapons" class="dropdown-item">weapons</Link>
                             </li>
@@ -40,16 +40,16 @@ return(
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="/final-valo/#about" class="nav-link text-white nav_effect">About US</a>
+                        <a href="/final-valo/#about" class="  mx-lg-2 nav-link text-white nav_effect">About US</a>
                     </li>
                 </ul>
     
-                <form action="" class="form d-none ">
+                {/* <form action="" class="form d-none ">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search.."/>
                         <span class="input-group-text"><i class="fa-solid fa-magnifying-glass "></i></span>
                       </div>
-                </form>
+                </form> */}
                 </div>
             </div>
         </nav>
