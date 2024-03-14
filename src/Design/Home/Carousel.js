@@ -20,19 +20,19 @@ return(
             <div class="carousel-item active">
               <img src="https://dotesports.com/wp-content/uploads/2020/04/20075547/valorant_jett_duotoned-1-2-1.jpg" alt="Los Angeles" style={carouelImg} class="d-block w-100"/>
               <div class="carousel-caption">
-                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0">Play Now</button></a>
+                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0 font_secondary">Play Now</button></a>
               </div>  
             </div>
             <div class="carousel-item">
-              <img src="https://images.alphacoders.com/118/thumbbig-1186644.webp" alt="Chicago" style={carouelImg} class="d-block w-100"/>
+              <img src="https://tasbihdigital.com/wp-content/uploads/2022/10/HD-Valorant-Wallpaper.jpg" alt="Chicago" style={carouelImg} class="d-block w-100"/>
               <div class="carousel-caption">
-                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0 ">Play Now</button></a>
+                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0 font_secondary ">Play Now</button></a>
               </div>  
             </div>
             <div class="carousel-item">
-              <img src="https://images7.alphacoders.com/108/thumbbig-1081933.webp" alt="New York"  style={carouelImg} class="d-block w-100"/>
+              <img src="https://wallpapers.com/images/hd/valorant-ignition-j19e3k9x6pn0naz9.jpg" alt="New York"  style={carouelImg} class="d-block w-100"/>
               <div class="carousel-caption">
-                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0">Play Now</button></a>
+                <a href="https://playvalorant.com/en-gb/" target="_blank"><button class="btn button-49 rounded-0 font_secondary">Play Now</button></a>
               </div>  
             </div>
            
