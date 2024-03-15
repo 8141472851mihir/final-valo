@@ -50,7 +50,7 @@ const Weapons = () => {
           <div className="row p-0">
           {weapons.map((weapon) => (
             <div key={weapon.uuid} class="col-md-6 m-0 p-0">
-              <div class='weapon-inner-card d-flex flex-column justify-content-between h-100  border border-light'>
+              <div class='weapon-inner-card d-flex flex-column justify-content-between h-100 '>
                 {/* div useful for center image */}
                 <div></div>
                 {/* image */}
