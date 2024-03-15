@@ -1,9 +1,10 @@
 import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
+import Agentdemo from "./Agentsdemo.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
-const Agentx = (props) => {
+const Agentx = () => {
     const data = (a,b,c,d) => {
         var element = document.getElementById(a);
         element.classList.remove("d-none");

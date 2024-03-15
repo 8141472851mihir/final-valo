@@ -51,6 +51,26 @@
     font-family: 'VALORANT', sans-serif !important;
     z-index: -1;
   }
+  .weapon_img_design{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: linear-gradient(left to,#111823);
+  }
+.arsenal_design_container{
+  position: relative;
+}
+.arsenal_design{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  word-wrap: break-word;
+  color: #ff4655 !important;
+  font-size: 10rem;
+  letter-spacing:0;
+z-index: 30;
+}
   @media screen and (max-width:768px){
     .about_us_design::before{
         content: '';
