@@ -5,9 +5,10 @@ import Maps from "./Maps.js";
 function Viewer() {
 return(
 <>
-    <About/>
+    
     <Patch/>
     <Maps/>
+    <About/>
 </>
 )
 }

@@ -18,7 +18,7 @@ function Patch() {
 
                     <div class="row mt-5">
                         <span className='text-end'>
-                            <a className="text-end text_color_danger font_secondary hover_white font_body" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" target="_blank">More Patch Notes</a>
+                            <a className="text-end text_color_danger font_secondary hover_white font_body" href="https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-6-04/" rel="noreferrer" target="_blank">More Patch Notes</a>
                         </span>
                     </div>
                 </div>

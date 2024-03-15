@@ -1,0 +1,61 @@
+
+.design-container{
+    position:relative;
+  }
+  .design-container::before{
+    content: "";
+    position:absolute;
+    background-color: transparent;
+    border-left: 0 solid transparent;
+    border-right: 7vw solid transparent;
+    border-bottom: 7vw solid #111823;
+    left: 0;
+    bottom: 0em;
+    height: 0px;
+    width: 0px;
+    box-sizing: border-box;
+    z-index: 60;
+  }
+  /* About video frame */
+  .video_frame_design{
+    position: relative;
+  }
+  .video_frame_design::before{
+    content: "";
+    position:absolute;
+    background-color: transparent;
+    border-left: 0 solid transparent;
+    border-right: 5vw solid transparent;
+    border-bottom: 5vw solid #111823;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 0;
+    box-sizing: border-box;
+    z-index: 60;
+  }
+  .border_design{
+    border-top:0.5px solid #ff465698;
+  }
+  /* About us Valorant text CSS */
+  .about_us_design::before{
+    position:absolute;
+    content: 'VALORANT';
+    color:#111823;
+    bottom: 0;
+    left: 0;
+    transform: translate(0%, 15%);
+    font-size: 9rem;
+    text-shadow: 0px 0px 2px #ff465698;
+    /* line-height: 50%; */
+    font-family: 'VALORANT', sans-serif !important;
+    z-index: -1;
+  }
+  @media screen and (max-width:768px){
+    .about_us_design::before{
+        content: '';
+      }
+      .video_frame_design::before{
+        display: none;
+      }
+  }
