@@ -43,6 +43,18 @@ return(
                             <li class="">
                                 <Link to="/final-valo/competitiveTiers" class="dropdown-item">Competitive Tiers</Link>
                             </li>
+                            <li class="">
+                                <Link to="/final-valo/bundles" class="dropdown-item">Bundles</Link>
+                            </li>
+                            <li class="">
+                                <Link to="/final-valo/buddies" class="dropdown-item">Buddies</Link>
+                            </li>
+                            <li class="">
+                                <Link to="/final-valo/sprays" class="dropdown-item">Sprays</Link>
+                            </li>
+                            <li class="">
+                                <Link to="/final-valo/playercard" class="dropdown-item">Player Cards</Link>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
