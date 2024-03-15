@@ -3,7 +3,7 @@ import Footer from "../Common/Footer.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
-const Agentx = (props) => {
+const Agentx = () => {
     const data = (a,b,c,d) => {
         var element = document.getElementById(a);
         element.classList.remove("d-none");
@@ -34,7 +34,7 @@ const Agentx = (props) => {
     };
 
     fetchAgents();
-  }, []);
+  }, [uid]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -50,14 +50,12 @@ const Agentx = (props) => {
     <div id="demo" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner">
             <div class="carousel-item active " style={{height: '80vh'}}>
-                
             <div class="my-5"></div>
                 <img src="D:\Projects\Practice\First\img\agents-background.jpg" alt="" class=" img-fluid" style={{height: '80vh' }}/>
               <div class="carousel-caption ">
-                <h3 style={{marginBottom: '3vh'}}><a><img src={agents.bustPortrait} height="400vh" alt="valorant-font" border="0"/></a></h3>
+                <h3 style={{marginBottom: '3vh'}}><a href={agents.bustPortrait}><img src={agents.bustPortrait} height="400vh" alt="valorant-font" border="0"/></a></h3>
                 <span class=" p-3 mt-2" id="filler-btn" style={{fontSize: 'xx-large'}}>{agents.displayName}</span><br></br>
                 <span class=" p-3 mt-2" id="filler-btn" style={{fontSize: 'x-large'}}>{agents.role.displayName}</span>
-                
             </div>  
             </div>
           </div>
