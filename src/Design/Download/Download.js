@@ -14,7 +14,7 @@ function Download() {
                   </video>
               <div class="carousel-caption d-md-block d-none">
                 <p style={{marginBottom: '5vh '}}>A 5v5 Character-based tactical shooter </p>
-                <h3 style={{marginBottom: '10vh'}}><a href="home.html"><img src="https://fontmeme.com/permalink/230425/21ebc8446a8f706151071ee4a51e6be3.png" alt="valorant-font" border="0" /></a></h3>
+                <h3 style={{marginBottom: '10vh'}}><a href="/final-valo"><img src="https://fontmeme.com/permalink/230425/21ebc8446a8f706151071ee4a51e6be3.png" alt="valorant-font" border="0" /></a></h3>
                 <a href="#download" ><button class="btn button-49 ">Download Now</button></a>
               </div>  
             </div>
