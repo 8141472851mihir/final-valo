@@ -3,7 +3,7 @@ import Footer from "../Common/Footer.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
-const Agentx = () => {
+const Agentx = (props) => {
     const data = (a,b,c,d) => {
         var element = document.getElementById(a);
         element.classList.remove("d-none");
@@ -70,7 +70,7 @@ const Agentx = () => {
                        
                 <ul class="nav nav-pills my-4">
                     <li class="nav-item">
-                            <button class="btn btn-outline-light active btn-square-md" onClick={() => data('a1','a2','a3','a4')}  data-bs-toggle="pill" data-bs-target="#collapseOne">C</button>       
+                            <button class="btn btn-outline-light active btn-square-md" onClick={() => data('a1','a2','a3','a4')}  data-bs-toggle="pill" data-bs-target="#collapseOne">Q</button>       
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
                     <li class="nav-item">
@@ -78,7 +78,7 @@ const Agentx = () => {
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
                     <li class="nav-item">
-                            <button class="btn  btn-outline-light btn-square-md " onClick={() => data('a3','a2','a1','a4')}  data-bs-toggle="pill" data-bs-target="#collapseThree">Q</button>
+                            <button class="btn  btn-outline-light btn-square-md " onClick={() => data('a3','a2','a1','a4')}  data-bs-toggle="pill" data-bs-target="#collapseThree">C</button>
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
 
@@ -89,7 +89,7 @@ const Agentx = () => {
                   <div >
 
                     <div id="a1" class="container">
-                        <h4>C - {agents.abilities[0].displayName}</h4>
+                        <h4>Q - {agents.abilities[0].displayName}</h4>
                         {agents.abilities[0].description}
                     </div>
                  
@@ -101,7 +101,7 @@ const Agentx = () => {
                
         
                     <div id="a3"  class=" container d-none">
-                        <h4>Q - {agents.abilities[2].displayName}</h4>
+                        <h4>C - {agents.abilities[2].displayName}</h4>
                         {agents.abilities[2].description}
                       </div>
 
@@ -114,26 +114,25 @@ const Agentx = () => {
             </div>
             <div class="col-md-6 ms-md-auto w-md-50">
                 <div  class="tab-content">
-
                     <div id="collapseOne" class="tab-pane container active">
-                        <img src={agents.abilities[0].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/>
-                        {/* <video class="img-thumbnail bg-danger border-danger p-2" src={agents.abilities[0].assetPath} width="600vh" autoplay muted loop></video> */}
-                    </div>
+                        {/* <img src={require('../../assets/Website_Gekko_Wingman_Stun_FNL.mp4')} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                      <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['Q']}  width="600vh" autoPlay muted loop></video>
+                   </div>
                  
         
                     <div id="collapseTwo"  class="tab-pane container ">
-                    <img src={agents.abilities[1].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/>
-                    {/* <video class="img-thumbnail bg-danger border-danger p-2" src="D:\Projects\Practice\First\assets\Brimstone_E.mp4" width="600vh" autoplay muted loop></video> */}
+                    {/* <img src={agents.abilities[1].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                    <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['E']} width="600vh" autoPlay muted loop></video>
                     </div>
                
         
                     <div id="collapseThree"  class="tab-pane container ">
-                    <img src={agents.abilities[2].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/>
-                        {/* <video class="img-thumbnail bg-danger border-danger p-2" src="D:\Projects\Practice\First\assets\Brimstone_Q.mp4" width="600vh" autoplay muted loop></video> */}
+                    {/* <img src={agents.abilities[2].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                        <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['C']} width="600vh" autoPlay muted loop></video>
                       </div>
                     <div id="collapseFour"  class="tab-pane container ">
-                    <img src={agents.abilities[3].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/>
-                    {/* <video class="img-thumbnail bg-danger border-danger p-2" src="D:\Projects\Practice\First\assets\Brimstone_X.mp4" width="600vh" autoplay muted loop></video> */}
+                    {/* <img src={agents.abilities[3].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                    <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['X']} width="600vh" autoPlay muted loop></video>
                     </div>
                    
                 </div>

@@ -46,22 +46,24 @@ const Agents = () => {
     </div>
     <div class="container text-light" >
         <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
-            {agents.map((agents) => (
-            <div key={agents.uuid} class="weapon-card col-md-4 col-12 text-center p-md-5 ">
-              <div class='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
-                <div class="">
-                <img class="align-text-middle img-fluid w-100 " src={agents.displayIcon} alt={agents.displayName} />
-                </div>
-                 <div class="weapon-info">
-                  <h3 class="weapon-name float-center">{agents.displayName}</h3>
-                  <span class="float-end"><button class="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></span>
-                </div>
-                <div class="cover-overlay text-dark">
-                    <p class="p-2 font-weight-bold text-danger text-uppercase ">{agents.description}</p>
-                    <div class="float-end"><button class="btn btn-danger" onClick={() => handleShareClick(`${agents.uuid}`)} id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></div>
-                </div> 
-              </div>
-            </div>
+            {agents.map((agent) => (
+              agent.uuid !== 'ded3520f-4264-bfed-162d-b080e2abccf9' ? (
+                  <div key={agent.uuid} className="weapon-card col-md-4 col-12 text-center p-md-5 ">
+                    <div className='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
+                      <div>
+                        <img className="align-text-middle img-fluid w-100" src={agent.displayIcon} alt={agent.displayName} />
+                      </div>
+                      <div className="weapon-info">
+                        <h3 className="weapon-name float-center">{agent.displayName}</h3>
+                        <span className="float-end"><button className="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></span>
+                      </div>
+                      <div className="cover-overlay text-dark">
+                        <p className="p-2 font-weight-bold text-danger text-uppercase ">{agent.description}</p>
+                        <div className="float-end"><button className="btn btn-danger" onClick={() => handleShareClick(`${agent.uuid}`)} id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></div>
+                      </div> 
+                    </div>
+                  </div>
+                ):null
             ))}
         </div>
     </div>
