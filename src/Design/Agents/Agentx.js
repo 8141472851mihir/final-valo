@@ -72,7 +72,7 @@ const data = (a,b,c,d) => {
                        
                 <ul class="nav nav-pills my-4">
                     <li class="nav-item">
-                            <button class="btn btn-outline-light active btn-square-md" onClick={() => data('a1','a2','a3','a4')}  data-bs-toggle="pill" data-bs-target="#collapseOne">C</button>       
+                            <button class="btn btn-outline-light active btn-square-md" onClick={() => data('a1','a2','a3','a4')}  data-bs-toggle="pill" data-bs-target="#collapseOne">Q</button>       
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
                     <li class="nav-item">
@@ -80,7 +80,7 @@ const data = (a,b,c,d) => {
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
                     <li class="nav-item">
-                            <button class="btn  btn-outline-light btn-square-md " onClick={() => data('a3','a2','a1','a4')}  data-bs-toggle="pill" data-bs-target="#collapseThree">Q</button>
+                            <button class="btn  btn-outline-light btn-square-md " onClick={() => data('a3','a2','a1','a4')}  data-bs-toggle="pill" data-bs-target="#collapseThree">C</button>
                     </li>
                     <li class="py-2" style={{fontSize: 'xx-large'}}>-</li>
 
@@ -91,7 +91,7 @@ const data = (a,b,c,d) => {
                   <div >
 
                     <div id="a1" class="container">
-                        <h4>C - {agents.abilities[0].displayName}</h4>
+                        <h4>Q - {agents.abilities[0].displayName}</h4>
                         {agents.abilities[0].description}
                     </div>
                  
@@ -103,7 +103,7 @@ const data = (a,b,c,d) => {
                
         
                     <div id="a3"  class=" container d-none">
-                        <h4>Q - {agents.abilities[2].displayName}</h4>
+                        <h4>C - {agents.abilities[2].displayName}</h4>
                         {agents.abilities[2].description}
                       </div>
 
@@ -116,10 +116,9 @@ const data = (a,b,c,d) => {
             </div>
             <div class="col-md-6 ms-md-auto w-md-50">
                 <div  class="tab-content">
-
                     <div id="collapseOne" class="tab-pane container active">
                         {/* <img src={require('../../assets/Website_Gekko_Wingman_Stun_FNL.mp4')} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                      <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['C']}  width="600vh" autoPlay muted loop></video>
+                      <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['Q']}  width="600vh" autoPlay muted loop></video>
                    </div>
                  
         
@@ -131,7 +130,7 @@ const data = (a,b,c,d) => {
         
                     <div id="collapseThree"  class="tab-pane container ">
                     {/* <img src={agents.abilities[2].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                        <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['Q']} width="600vh" autoPlay muted loop></video>
+                        <video class="img-thumbnail bg-danger border-danger p-2" src={Agentdemo[agents.displayName]['C']} width="600vh" autoPlay muted loop></video>
                       </div>
                     <div id="collapseFour"  class="tab-pane container ">
                     {/* <img src={agents.abilities[3].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}

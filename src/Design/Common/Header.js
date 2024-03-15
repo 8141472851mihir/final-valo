@@ -37,6 +37,12 @@ return(
                             <li class="">
                                 <Link to="/final-valo/Agents" class="dropdown-item">Agents</Link>
                             </li>
+                            <li class="">
+                                <Link to="/final-valo/Currency" class="dropdown-item">Currency</Link>
+                            </li>
+                            <li class="">
+                                <Link to="/final-valo/competitiveTiers" class="dropdown-item">Competitive Tiers</Link>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
