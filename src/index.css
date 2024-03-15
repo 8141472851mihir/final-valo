@@ -288,7 +288,7 @@ color: #ff4655;
 .weapon-inner-card {
   position: relative;
   height: 400px !important;
-  
+  border: 0.5px solid #ffffff54;
 }
 
 .cover-overlay {
