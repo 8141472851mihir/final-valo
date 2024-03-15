@@ -3,7 +3,11 @@ import Footer from "../Common/Footer.js";
 import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+<<<<<<< Updated upstream
 import Card from '../../components/CardBuddies';
+=======
+import Card from '../../components/Card';
+>>>>>>> Stashed changes
 
 const Buddies = () => {
     const navigate = useNavigate();
@@ -49,7 +53,13 @@ const Buddies = () => {
         ))}
         </div>
       </div>
+<<<<<<< Updated upstream
         <Footer/>
+=======
+      <div class="fixed-bottom">
+        <Footer/>
+      </div>
+>>>>>>> Stashed changes
     </div>
   )
 }
