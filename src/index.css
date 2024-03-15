@@ -24,10 +24,10 @@ body{
 }
 /* COLOR CSS ------------------------------------*/
 .bg_color_danger{
-  background-color: #FF013C;
+  background-color: #ff4655;
 }
 .text_color_danger{
-  color:#FF013C;
+  color:#ff4655;
 }
 .bg_dark{
   background-color: #161f2d;
@@ -81,7 +81,7 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
 width: 100px;
 /* height: 50px; */
 box-shadow: 3px 0 0px #ffffff;
-background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
+background: linear-gradient(45deg, transparent 5%, #ff4655 5%);
 border: 0;
 position: relative;
 /* user-select: none; */
@@ -103,7 +103,7 @@ top: 0;
 left: 0;
 right: 0;
 bottom: 0;
-background: linear-gradient(45deg, transparent 3%, #ffffff 3%, #ffffff 5%, #FF013C 5%);
+background: linear-gradient(45deg, transparent 3%, #ffffff 3%, #ffffff 5%, #ff4655 5%);
 text-shadow: -3px -3px 0px #ffffff, 3px 3px 0px #ffffff;
 clip-path: var(--slice-0);  
 }
@@ -172,7 +172,7 @@ animation-timing-function: steps(2, end);
 } */
 #bgtext {
 position: relative;
-border-bottom: 5px solid #FF013C;
+border-bottom: 5px solid #ff4655;
 }
 
 #bgtext:before {
@@ -187,14 +187,14 @@ background-size: 300px 100px; */
 text-align: center;
 /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; */
 
--webkit-text-stroke: #FF013C 2px;
+-webkit-text-stroke: #ff4655 2px;
 -webkit-text-fill-color: transparent;
 color: rgb(255, 255, 255);
 /* font-size: 70px;    */
 }
 #bgtext1 {
 position: relative;
-border-bottom: 5px solid #FF013C;
+border-bottom: 5px solid #ff4655;
 }
 
 #bgtext1:before {
@@ -207,14 +207,14 @@ content: url(https://fontmeme.com/permalink/230424/4e742bed5daca9290df71d8ecf5c3
 /* background-repeat: no-repeat;
 background-size: 300px 100px; */
 text-align: center;
--webkit-text-stroke: #FF013C 2px;
+-webkit-text-stroke: #ff4655 2px;
 -webkit-text-fill-color: transparent;
 color: rgb(255, 255, 255);
 /* font-size: 70px;    */
 }
 #bgtext2 {
 position: relative;
-border-bottom: 5px solid #FF013C;
+border-bottom: 5px solid #ff4655;
 }
 
 #bgtext2:before {
@@ -229,14 +229,14 @@ background-size: 300px 100px; */
 text-align: center;
 /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; */
 
--webkit-text-stroke: #FF013C 2px;
+-webkit-text-stroke: #ff4655 2px;
 -webkit-text-fill-color: transparent;
 color: rgb(255, 255, 255);
 /* font-size: 70px;    */
 }
 #bgtext3 {
 position: relative;
-border-bottom: 5px solid #FF013C;
+border-bottom: 5px solid #ff4655;
 }
 
 #bgtext3:before {
@@ -251,7 +251,7 @@ background-size: 300px 100px; */
 text-align: center;
 /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ; */
 
--webkit-text-stroke: #FF013C 2px;
+-webkit-text-stroke: #ff4655 2px;
 -webkit-text-fill-color: transparent;
 color: rgb(255, 255, 255);
 /* font-size: 70px;    */
@@ -280,7 +280,7 @@ transition: 01s;
 background-color: white;
 border-radius: 10px;
 /* border-top-right-radius:-30px ; */
-color: #FF013C;
+color: #ff4655;
 
 }
 
@@ -317,17 +317,20 @@ color: #FF013C;
   transform: translate(-50%, -50%);
   z-index: 40;
 }
-@media screen and (max-width:768px) {
-  .carousal_btn a{
-    width:50px;
-  }
-}
-/*
-.carousel::before{
+.carousel_container::before{
   content: '';
   position:absolute;
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(#111823,#11182337 10%,#11182337 80%,#111823);
-  z-index: 50;
-} */
+  z-index: 10;
+}
+.carousel-indicators,.carousel-control-next,.carousel-control-prev{
+  z-index: 20;
+}
+
+@media screen and (max-width:768px) {
+  .carousal_btn a{
+    width:50px;
+  }
+  
+}
