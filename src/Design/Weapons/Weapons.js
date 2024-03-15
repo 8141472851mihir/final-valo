@@ -35,26 +35,38 @@ const Weapons = () => {
   return (
     <div>
     <Header/>
-    <div class="mt-5 pt-5">
-    <div class="container">
-        <h1 class="col-12 text-center text-light ">Valorant Arsenal</h1>
-    </div>
-    <div class="container text-light" >
-        <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
-            {weapons.map((weapon) => (
-            <div key={weapon.uuid} class="weapon-card col-md-6 col-12 text-center p-md-5 ">
-              <div class='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
-                <div class="">
-                <img class="align-text-middle img-fluid w-100 " src={weapon.displayIcon} alt={weapon.displayName} />
+    <div class="mt-2 position-relative  ">
+        <div className="mt-5 h-50 w-50 weapon_img_design">
+          <img src="https://a-static.besthdwallpaper.com/reyna-and-jett-wallpaper-1600x1200-78749_23.jpg" className="d-block w-100" alt="" />
+        </div>
+    <div class="container-fluid row mt-5 pt-4 ">
+       <div className="col-md-6 m-0 p-0 text-white font_primary display-1 arsenal_design_container">
+        <div className="position-fixed">WEAPONS</div>
+        <div className="m-0 p-0 text-white arsenal_design">ARSENAL</div>
+       </div>
+       {/* content DIV */}
+       <div className="col-md-6  text-white">
+        <div class="container-fluid m-0 p-0 ">
+          <div className="row p-0">
+          {weapons.map((weapon) => (
+            <div key={weapon.uuid} class="col-md-6 m-0 p-0">
+              <div class='weapon-inner-card d-flex flex-column justify-content-between h-100  border border-light'>
+                {/* div useful for center image */}
+                <div></div>
+                {/* image */}
+                <div class="p-md-4">
+                    <img class=" w-100 " src={weapon.displayIcon} alt={weapon.displayName} />
                 </div>
-                 <div class="weapon-info">
-                  <h3 class="weapon-name float-center">{weapon.displayName}</h3>
-                  <span class="float-end"><button class="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></span>
+                {/* weapon name */}
+                 <div class="mx-4">
+                  <h3 class="font_primary weapon_name display-3">{weapon.displayName}</h3>
                 </div>
-                <div className="cover-overlay text-dark">
+                {/* overlay table */}
+                <div className="cover-overlay text-dark d-flex justify-content-between flex-column">
+                  <div></div>
                   {weapon.weaponStats && (
                     <>
-                   <table class="table table-responsive">
+                   <table class="table font_secondary border border-dark">
                       <thead>
                         <tr>
                           <th scope="col">Category</th>
@@ -74,11 +86,19 @@ const Weapons = () => {
                     </table>  
                   </>
                   )}
+                  <div class="mx-4">
+                  <h3 class="font_primary weapon_name display-3">{weapon.displayName}</h3>
+                </div>
                 </div> 
               </div>
             </div>
             ))}
+          </div>
         </div>
+       </div>
+    </div>
+    <div class="container text-light" >
+        
     </div>
       
     </div>

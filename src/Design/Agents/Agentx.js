@@ -1,20 +1,22 @@
 import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
+import Agentdemo from "./Agentsdemo.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import Agentdemo from "./Agentsdemo.js";
-const Agentx = () => {
-const data = (a,b,c,d) => {
-    var element = document.getElementById(a);
-    element.classList.remove("d-none");
-    var element1 = document.getElementById(b);
-    element1.classList.add("d-none");
-    var element2 = document.getElementById(c);
-    element2.classList.add("d-none");
-    var element3 = document.getElementById(d);
-    element3.classList.add("d-none");
-  };
 
+
+const Agentx = () => {
+    const data = (a,b,c,d) => {
+        var element = document.getElementById(a);
+        element.classList.remove("d-none");
+        var element1 = document.getElementById(b);
+        element1.classList.add("d-none");
+        var element2 = document.getElementById(c);
+        element2.classList.add("d-none");
+        var element3 = document.getElementById(d);
+        element3.classList.add("d-none");
+      };
+    
   const { uid } = useParams();
   const [agents, setAgents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -34,7 +36,7 @@ const data = (a,b,c,d) => {
     };
 
     fetchAgents();
-  }, []);
+  }, [uid]);
 
   if (isLoading) {
     return <p>Loading...</p>;
@@ -50,14 +52,12 @@ const data = (a,b,c,d) => {
     <div id="demo" class="carousel slide" data-bs-ride="carousel" >
         <div class="carousel-inner">
             <div class="carousel-item active " style={{height: '80vh'}}>
-                
             <div class="my-5"></div>
                 <img src="D:\Projects\Practice\First\img\agents-background.jpg" alt="" class=" img-fluid" style={{height: '80vh' }}/>
               <div class="carousel-caption ">
-                <h3 style={{marginBottom: '3vh'}}><a><img src={agents.bustPortrait} height="400vh" alt="valorant-font" border="0"/></a></h3>
+                <h3 style={{marginBottom: '3vh'}}><a href={agents.bustPortrait}><img src={agents.bustPortrait} height="400vh" alt="valorant-font" border="0"/></a></h3>
                 <span class=" p-3 mt-2" id="filler-btn" style={{fontSize: 'xx-large'}}>{agents.displayName}</span><br></br>
                 <span class=" p-3 mt-2" id="filler-btn" style={{fontSize: 'x-large'}}>{agents.role.displayName}</span>
-                
             </div>  
             </div>
           </div>
