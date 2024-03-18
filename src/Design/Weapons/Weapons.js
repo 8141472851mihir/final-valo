@@ -98,7 +98,6 @@ const Weapons = () => {
        </div>
     </div>
     <div className="container text-light" >
-        
     </div>
       
     </div>

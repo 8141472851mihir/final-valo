@@ -41,25 +41,30 @@ const Agents = () => {
     <div>
     <Header/>
     <div class="mt-5 pt-5">
-    <div class="container">
-        <h1 class="col-12 text-center text-light ">Valorant Agents</h1>
+    <div class="container p-4 my-5">
+        <h1 class="col-12 text_color_danger display-3 display-md-4 text-center text-light font_primary">Valorant Agents</h1>
     </div>
     <div class="container text-light" >
-        <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
+     
+        <div class="container-fluid p-0   my-1 d-flex flex-wrap">
             {agents.map((agent) => (
               agent.uuid !== 'ded3520f-4264-bfed-162d-b080e2abccf9' ? (
-                  <div key={agent.uuid} className="weapon-card col-md-4 col-12 text-center p-md-5 ">
-                    <div className='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
-                      <div>
-                        <img className="align-text-middle img-fluid w-100" src={agent.displayIcon} alt={agent.displayName} />
+                  <div key={agent.uuid} className="col-md-4 col-xl-3 col-6 text-center p-1 ">
+                    <div className='agent-inner-card d-flex justify-content-center flex-column p-md-4 p-3 border border-secondary'>
+                      <div className="ratio ratio-1x1 ">
+                        <img className=" w-100" src={agent.displayIcon} alt={agent.displayName} />
                       </div>
-                      <div className="weapon-info">
-                        <h3 className="weapon-name float-center">{agent.displayName}</h3>
-                        <span className="float-end"><button className="btn btn-danger" id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></span>
+                      <div className="mt-2 ">
+                        <h3 className="text-center  font_secondary fw-bold">{agent.displayName}</h3>
                       </div>
-                      <div className="cover-overlay text-dark">
-                        <p className="p-2 font-weight-bold text-danger text-uppercase ">{agent.description}</p>
-                        <div className="float-end"><button className="btn btn-danger" onClick={() => handleShareClick(`${agent.uuid}`)} id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">+</button></div>
+                      <div className="cover-overlay flex-column text-dark">
+                        <div className="font_secondary overflow-scroll  ajent_cover_overlay">
+                          <p className="p-2 font-weight-bold  font_body text-start p-lg-4 p-md-2 p-2 ">{agent.description}</p>
+                        </div>
+                        <div className="mt-3">
+                          <button className="bg-transparent border-0 font_secondary text-decoration-underline hover_black font_body text_color_danger " onClick={() => handleShareClick(`${agent.uuid}`)} id="weaponDeatils" name="weaponDeatils" value="weaponDeatils">More Details</button>
+                        </div>
+                        
                       </div> 
                     </div>
                   </div>
