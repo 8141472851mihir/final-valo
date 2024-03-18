@@ -168,7 +168,7 @@ const Agentdemo = {
         "C": Jett_C,
         "X": Jett_X
     },
-    "KAYO": {
+    "KAY/O": {
         "Q": KAYO_Q,
         "E": KAYO_E,
         "C": KAYO_C,
