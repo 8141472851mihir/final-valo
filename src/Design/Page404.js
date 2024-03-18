@@ -11,7 +11,7 @@ const Page404 = () => {
         </div>
         <div class="jumbotron my-auto">
         <h1 class="text-light" style={{fontSize:'10vh'}}>Page Not Found!</h1>
-        <p class="text-light" style={{fontSize:'3vh'}}>The page You are looking for was moved,removed,renamed or might never existed</p>
+        <p class="text-light" style={{fontSize:'2vh'}}>The page You are looking for was moved,removed,renamed or might never existed.</p>
         <button class="button-49" style={{width:'200px'}}>Back to Home Page</button>
         </div>
       </div>
