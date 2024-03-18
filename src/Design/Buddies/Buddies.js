@@ -39,11 +39,11 @@ const Buddies = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container">
-            <h1 class="col-12 text-center text-light ">Buddies</h1>
+      <div class="container  mt-5 pt-5">
+        <div class="container p-4 my-5">
+            <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Buddies</h1>
         </div>
-        <div class="row mt-5">
+        <div class="row mx-4 mt-5">
         {buddies.map((Buddies) => (
             <Card imgSrc={Buddies['displayIcon']} title={Buddies['displayName']} href="#" />
         ))}

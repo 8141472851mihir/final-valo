@@ -25,16 +25,19 @@ body{
 }
 /* COLOR CSS ------------------------------------*/
 .bg_color_danger{
-  background-color: #ff4655;
+  background-color: #ff4655 !important;
 }
 .text_color_danger{
-  color:#ff4655;
+  color:#ff4655 !important;
 }
 .bg_dark{
-  background-color: #161f2d;
+  background-color: #161f2d !important;
+}
+.hover_black:hover{
+  color: #111823 !important;
 }
 .hover_white:hover{
- color: white;
+ color: white !important;
 }
 /* Border */
 .border_light{
@@ -284,13 +287,6 @@ border-radius: 10px;
 color: #ff4655;
 
 }
-
-.weapon-inner-card {
-  position: relative;
-  height: 400px !important;
-  border: 0.5px solid #ffffff54;
-}
-
 .cover-overlay {
   position: absolute;
   top: 0;
@@ -304,8 +300,19 @@ color: #ff4655;
   justify-content: center;
   z-index: 10;
 }
-.table{
-  width: 100%;
+.agent-inner-card{
+  position: relative;
+}
+.agent-inner-card:hover .cover-overlay{
+  opacity: 1;
+}
+#a1,#a2,#a3,#a4{
+  height: auto;
+}
+.weapon-inner-card {
+  position: relative;
+  height: 400px !important;
+  border: 0.5px solid #ffffff54;
 }
 .weapon_name{
   z-index: 40;
@@ -315,7 +322,9 @@ color: #ff4655;
   opacity: 1;
   color: #111823;
 }
-
+.table{
+  width: 100%;
+}
 
 /* Carousal CSS */
 .carousel_container{
@@ -340,6 +349,15 @@ color: #ff4655;
 }
 /* weapon table */
 
+@media screen and (max-width:991px) {
+  .ajent_cover_overlay p{
+    font-size: 14px !important;
+  }
+  .ajent_cover_overlay{
+    height: 150px !important;
+  }
+  
+}
 @media screen and (max-width:768px) {
   .carousal_btn a{
     width:50px;

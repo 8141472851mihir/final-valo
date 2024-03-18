@@ -3,7 +3,7 @@ import Footer from "../Common/Footer.js";
 import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import Card from '../../components/Card';
+import Card from '../../components/CardBuddies';
 
 const Currency = () => {
   const navigate = useNavigate();
@@ -39,12 +39,12 @@ const Currency = () => {
        <>
        <Header />
             <div class="container mt-5 pt-5">
-            <div class="container">
-                <h1 class="col-12 text-center text-light ">Valorant Currency</h1>
+            <div class="container p-3 my-5">
+                <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Currency</h1>
             </div>
-            <div class="row mt-5">
+            <div class="row justify-content-center mt-5">
             {currencies.map((currency) => (
-                <Card imgSrc={currency['displayIcon']} title={currency['displayName']} href="#" />
+                <Card imgSrc={currency['displayIcon']} title={currency['displayName']} />
             ))}
             </div>
 
