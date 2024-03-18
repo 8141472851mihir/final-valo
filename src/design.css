@@ -69,7 +69,54 @@
   color: #ff4655 !important;
   font-size: 10rem;
   letter-spacing:0;
-z-index: 30;
+  z-index: -1;
+}
+/* Media query */
+@media screen  and (max-width:1500px) {
+  .arsenal_design{
+    font-size: 8rem;
+  }
+  .weapon_name{
+    font-size: 3rem;
+  }
+}
+@media screen  and (max-width:1200px) {
+  
+  .arsenal_design{
+    width: 20%;
+    font-size: 5rem;
+    right: 0;
+    bottom: 0;
+    left: auto;
+  }
+  .weapon_name{
+    font-size: 2.5rem;
+  }
+  .weapon_title{
+    font-size:2.5rem;
+  }
+}
+@media screen  and (max-width:991px) {
+  .weapon_title{
+    position: static !important;
+  }
+  .arsenal_design_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .arsenal_design{
+    width: auto;
+    font-size:5rem;
+    position: static;
+    color: #111823 !important;
+    text-shadow: 0px 0px 2px #ff4655;
+  }
+  .weapon_img_design{
+    width: 100% !important;
+    opacity: 0.5;
+  }
+  
 }
   @media screen and (max-width:768px){
     .about_us_design::before{
@@ -78,4 +125,21 @@ z-index: 30;
       .video_frame_design::before{
         display: none;
       }
+      .arsenal_design_container{
+        justify-content: center !important;
+      }
+      .arsenal_design{
+       display: none;
+      }
+      .weapon_title{
+        font-size: 3rem;
+      }
+      
   }
+  @media screen and (max-width:576px)
+  {
+    .weapon_table thead th{
+      font-size: 14px !important;
+    }
+  }
+ 
