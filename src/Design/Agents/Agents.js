@@ -42,7 +42,7 @@ const Agents = () => {
     <Header/>
     <div className="mt-5 pt-5">
     <div className="container p-4 my-5">
-        <h1 className="col-12 text_color_danger display-3 display-md-4 text-center text-light font_primary">Valorant Agents</h1>
+        <h1 className="col-12 text_color_danger display-3 display-md-4 text-center text-light font_primary">Agents</h1>
     </div>
     <div className="container text-light" >
      

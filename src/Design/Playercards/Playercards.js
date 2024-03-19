@@ -41,7 +41,7 @@ const Playercard = () => {
       <Header/>
       <div className="container mt-5 pt-5">
         <div className="container">
-            <h1 className="col-12 text-center text-light ">Sprays</h1>
+            <h1 className="col-12 text-center text-light ">Player Cards</h1>
         </div>
         <div className="row mt-5">
         {Playercards.map((playerCard) => (
