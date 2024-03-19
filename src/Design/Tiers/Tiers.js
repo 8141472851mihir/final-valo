@@ -37,11 +37,11 @@ const Tiers = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container">
-            <h1 class="col-12 text-center text-light ">Competitive Tiers</h1>
+      <div className="container mt-5 pt-5">
+        <div className="container">
+            <h1 className="col-12 text-center text-light ">Competitive Tiers</h1>
         </div>
-        <div class="row mt-5">
+        <div className="row mt-5">
         {competitivetiers[0]['tiers'].map((Tiers) => (
           Tiers.tier !== 1 && Tiers.tier !==2 ? (
             <Card imgSrc={Tiers['largeIcon']} title={Tiers['tierName']}  />
@@ -49,7 +49,7 @@ const Tiers = () => {
         ))}
         </div>
       </div>
-      <div class="fixed-bottom">
+      <div className="fixed-bottom">
         <Footer/>
       </div>
     </div>

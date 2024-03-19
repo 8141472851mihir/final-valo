@@ -38,18 +38,18 @@ const Currency = () => {
     <div>
        <>
        <Header />
-            <div class="container mt-5 pt-5">
-            <div class="container p-3 my-5">
-                <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Currency</h1>
+            <div className="container mt-5 pt-5">
+            <div className="container p-3 my-5">
+                <h1 className="col-12 text-center text-light font_primary display-4 text_color_danger">Currency</h1>
             </div>
-            <div class="row justify-content-center mt-5">
+            <div className="row justify-content-center mt-5">
             {currencies.map((currency) => (
                 <Card imgSrc={currency['displayIcon']} title={currency['displayName']} />
             ))}
             </div>
 
             </div>
-            <div class="fixed-bottom">
+            <div className="fixed-bottom">
                 <Footer/>
             </div>
         </>

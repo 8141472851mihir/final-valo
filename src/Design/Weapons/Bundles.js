@@ -39,11 +39,11 @@ const Bundles = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container p-4 my-5">
-            <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Bundles</h1>
+      <div className="container mt-5 pt-5">
+        <div className="container p-4 my-5">
+            <h1 className="col-12 text-center text-light font_primary display-4 text_color_danger">Bundles</h1>
         </div>
-        <div class="row mt-5">
+        <div className="row mt-5">
         {bundles.map((Bundles) => (
             <Card imgSrc={Bundles['displayIcon']} title={Bundles['displayName']} href="#" />
         ))}

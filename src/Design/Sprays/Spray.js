@@ -39,11 +39,11 @@ const Spray = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container">
-            <h1 class="col-12 text-center text-light ">Sprays</h1>
+      <div className="container mt-5 pt-5">
+        <div className="container">
+            <h1 className="col-12 text-center text-light ">Sprays</h1>
         </div>
-        <div class="row mt-5">
+        <div className="row mt-5">
         {sprays.map((spray) => (
             <Card imgSrc={spray['fullIcon']!==null?spray['fullIcon']:spray['displayIcon']} title={spray['displayName']} href="#" />
         ))}

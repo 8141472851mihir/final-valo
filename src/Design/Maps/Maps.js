@@ -40,25 +40,25 @@ const Maps = () => {
   return (
     <div>
     <Header/>
-    <div class="mt-5 pt-5">
-    <div class="container">
-        <h1 class="col-12 text-center text-light ">Valorant Maps</h1>
+    <div className="mt-5 pt-5">
+    <div className="container">
+        <h1 className="col-12 text-center text-light ">Valorant Maps</h1>
     </div>
-    <div class="container text-light" >
-        <div class="container-fluid weapon-list my-1 d-flex flex-wrap">
+    <div className="container text-light" >
+        <div className="container-fluid weapon-list my-1 d-flex flex-wrap">
             {map.map((map) => (
-            <div key={map.uuid} class="weapon-card col-md-4 col-12 text-center p-md-5 ">
-              <div class='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
-                <div class="">
-                <img class="align-text-middle img-fluid w-100 " src={map.splash} alt={map.splash} />
+            <div key={map.uuid} className="weapon-card col-md-4 col-12 text-center p-md-5 ">
+              <div className='weapon-inner-card h-100 d-flex justify-content-between flex-column p-md-4 border border-light'>
+                <div className="">
+                <img className="align-text-middle img-fluid w-100 " src={map.splash} alt={map.splash} />
                 </div>
-                 <div class="weapon-info">
-                  <h3 class="weapon-name float-center">{map.displayName}</h3>
-                  <span class="float-end"><button class="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></span>
+                 <div className="weapon-info">
+                  <h3 className="weapon-name float-center">{map.displayName}</h3>
+                  <span className="float-end"><button className="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></span>
                 </div>
-                <div class="cover-overlay text-dark">
-                    <p class="p-2 font-weight-bold text-danger text-uppercase ">{map.displayName}</p>
-                    <div class="float-end"><button class="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></div>
+                <div className="cover-overlay text-dark">
+                    <p className="p-2 font-weight-bold text-danger text-uppercase ">{map.displayName}</p>
+                    <div className="float-end"><button className="btn btn-danger" id="mapDeatils" name="mapDeatils" value="mapDeatils">+</button></div>
                 </div> 
               </div>
             </div>
