@@ -8,13 +8,13 @@ import React, { useState, useEffect } from 'react';
 const Agentx = () => {
   const data = (a, b, c, d) => {
     var element = document.getElementById(a);
-    element.classNameList.remove("d-none");
+    element.classList.remove("d-none");
     var element1 = document.getElementById(b);
-    element1.classNameList.add("d-none");
+    element1.classList.add("d-none");
     var element2 = document.getElementById(c);
-    element2.classNameList.add("d-none");
+    element2.classList.add("d-none");
     var element3 = document.getElementById(d);
-    element3.classNameList.add("d-none");
+    element3.classList.add("d-none");
   };
 
   const { uid } = useParams();
