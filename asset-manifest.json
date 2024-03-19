@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/final-valo/static/css/main.dd12593b.css",
-    "main.js": "/final-valo/static/js/main.1e88f840.js",
+    "main.css": "/final-valo/static/css/main.0ea3c1e2.css",
+    "main.js": "/final-valo/static/js/main.5dccc705.js",
     "static/js/453.ec55b2e5.chunk.js": "/final-valo/static/js/453.ec55b2e5.chunk.js",
     "static/media/Harbor_Q_v001_web.mp4": "/final-valo/static/media/Harbor_Q_v001_web.b55eb0e71cb32a4d3a3c.mp4",
     "static/media/Chamber_C_rework_web.mp4": "/final-valo/static/media/Chamber_C_rework_web.c4d335a7a96b14c1655e.mp4",
@@ -97,12 +97,12 @@
     "static/media/Yoru_C.mp4": "/final-valo/static/media/Yoru_C.a834e1db63488df4a058.mp4",
     "static/media/Jett_Q_v001_web.mp4": "/final-valo/static/media/Jett_Q_v001_web.78c0a08e4e0285e432e9.mp4",
     "index.html": "/final-valo/index.html",
-    "main.dd12593b.css.map": "/final-valo/static/css/main.dd12593b.css.map",
-    "main.1e88f840.js.map": "/final-valo/static/js/main.1e88f840.js.map",
+    "main.0ea3c1e2.css.map": "/final-valo/static/css/main.0ea3c1e2.css.map",
+    "main.5dccc705.js.map": "/final-valo/static/js/main.5dccc705.js.map",
     "453.ec55b2e5.chunk.js.map": "/final-valo/static/js/453.ec55b2e5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd12593b.css",
-    "static/js/main.1e88f840.js"
+    "static/css/main.0ea3c1e2.css",
+    "static/js/main.5dccc705.js"
   ]
 }
