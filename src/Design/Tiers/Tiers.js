@@ -44,7 +44,7 @@ const Tiers = () => {
         <div class="row mt-5">
         {competitivetiers[0]['tiers'].map((Tiers) => (
           Tiers.tier !== 1 && Tiers.tier !==2 ? (
-            <Card imgSrc={Tiers['largeIcon']} title={Tiers['tierName']} href="#" />
+            <Card imgSrc={Tiers['largeIcon']} title={Tiers['tierName']}  />
           ):null
         ))}
         </div>
