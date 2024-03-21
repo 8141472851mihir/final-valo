@@ -3,6 +3,7 @@ import Footer from "../Common/Footer.js";
 // import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import Loader from "../Common/Loader.js";
 
 const Maps = () => {
   const navigate = useNavigate();
@@ -22,7 +23,9 @@ const Maps = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -30,7 +33,7 @@ const Maps = () => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
 
   if (error) {

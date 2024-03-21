@@ -3,6 +3,7 @@ import Footer from "../Common/Footer.js";
 import Agentdemo from "./Agentsdemo.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import Loader from "../Common/Loader.js";
 
 
 const Agentx = () => {
@@ -31,7 +32,9 @@ const Agentx = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -39,7 +42,7 @@ const Agentx = () => {
   }, [uid]);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
 
   if (error) {

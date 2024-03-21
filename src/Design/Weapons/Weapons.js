@@ -2,6 +2,7 @@ import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
 
 import React, { useState, useEffect } from 'react';
+import Loader from "../Common/Loader.js";
 
 const Weapons = () => {
   const [weapons, setWeapons] = useState([]);
@@ -17,7 +18,9 @@ const Weapons = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -25,7 +28,7 @@ const Weapons = () => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
 
   if (error) {

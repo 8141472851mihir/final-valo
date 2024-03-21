@@ -1,5 +1,6 @@
 import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
+import Loader from "../Common/Loader.js";
 // import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
@@ -22,7 +23,9 @@ const Agents = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -30,7 +33,7 @@ const Agents = () => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader/>;
   }
 
   if (error) {

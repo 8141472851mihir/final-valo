@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/CardPlayerCard';
+import Loader from "../Common/Loader.js";
 
 const Playercard = () => {
     const navigate = useNavigate();
@@ -20,7 +21,9 @@ const Playercard = () => {
         } catch (error) {
           setError(error);
         } finally {
-          setIsLoading(false);
+          setTimeout(() => {
+            setIsLoading(false);
+       }, 1000)
         }
       };
   
@@ -28,7 +31,7 @@ const Playercard = () => {
     }, []);
   
     if (isLoading) {
-      return <p>Loading...</p>;
+      return <p><Loader/></p>;
     }
   
     if (error) {
