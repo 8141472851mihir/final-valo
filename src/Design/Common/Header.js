@@ -3,69 +3,69 @@ import {Link} from "react-router-dom";
 function Header() {
 return(
 <div>
-<div class="container-fluid bg_color_danger fixed-top navigation">
-        <nav class="navbar navbar-expand-sm ">
-            <div class="container-fluid ">
-                <Link class="navbar-brand font_primary text-white " to="/final-valo">Valorant</Link>
-                <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
+<div className="container-fluid bg_color_danger fixed-top navigation">
+        <nav className="navbar navbar-expand-sm ">
+            <div className="container-fluid ">
+                <Link className="navbar-brand font_primary text-white " to="/final-valo">Valorant</Link>
+                <button className="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="navbar-nav font_secondary text-white nav_effect ">
-                    <li class="nav-item ">
-                        <Link to="/final-valo" class="  mx-lg-2 nav-link active bg-transparent text-white nav_effect">Home</Link>
+                <div className="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul className="navbar-nav font_secondary text-white nav_effect ">
+                    <li className="nav-item ">
+                        <Link to="/final-valo" className="  mx-lg-2 nav-link active bg-transparent text-white nav_effect">Home</Link>
                     </li>
-                    <li class="nav-item">
-                        <a href="/final-valo/#patch" class="  mx-lg-2 nav-link text-white nav_effect">Patch Notes</a>
+                    <li className="nav-item">
+                        <a href="/final-valo/#patch" className="  mx-lg-2 nav-link text-white nav_effect">Patch Notes</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="/final-valo/#popular-maps" class="  mx-lg-2 nav-link text-white nav_effect">Popular Maps</a>
+                    <li className="nav-item">
+                        <a href="/final-valo/#popular-maps" className="  mx-lg-2 nav-link text-white nav_effect">Popular Maps</a>
                     </li>
-                    <li class="nav-item">
-                        <Link to="/final-valo/download" class="  mx-lg-2 nav-link text-white nav_effect">Download</Link>
+                    <li className="nav-item">
+                        <Link to="/final-valo/download" className="  mx-lg-2 nav-link text-white nav_effect">Download</Link>
                     </li>
                     
-                    <li class="nav-item dropdown">
-                        <Link  class="  mx-lg-2 nav-link dropdown-toggle text-white nav_effect" data-bs-toggle="dropdown">Other</Link>
-                        <ul class="dropdown-menu rounded-0">
-                            <li class="">
-                                <Link to="/final-valo/weapons" class="dropdown-item">weapons</Link>
+                    <li className="nav-item dropdown">
+                        <Link  className="  mx-lg-2 nav-link dropdown-toggle text-white nav_effect" data-bs-toggle="dropdown">Other</Link>
+                        <ul className="dropdown-menu rounded-0">
+                            <li className="">
+                                <Link to="/final-valo/weapons" className="dropdown-item">weapons</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/map" class="dropdown-item">Maps</Link>
+                            <li className="">
+                                <Link to="/final-valo/map" className="dropdown-item">Maps</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/Agents" class="dropdown-item">Agents</Link>
+                            <li className="">
+                                <Link to="/final-valo/Agents" className="dropdown-item">Agents</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/Currency" class="dropdown-item">Currency</Link>
+                            <li className="">
+                                <Link to="/final-valo/Currency" className="dropdown-item">Currency</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/competitiveTiers" class="dropdown-item">Competitive Tiers</Link>
+                            <li className="">
+                                <Link to="/final-valo/competitiveTiers" className="dropdown-item">Competitive Tiers</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/bundles" class="dropdown-item">Bundles</Link>
+                            <li className="">
+                                <Link to="/final-valo/bundles" className="dropdown-item">Bundles</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/buddies" class="dropdown-item">Buddies</Link>
+                            <li className="">
+                                <Link to="/final-valo/buddies" className="dropdown-item">Buddies</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/sprays" class="dropdown-item">Sprays</Link>
+                            <li className="">
+                                <Link to="/final-valo/sprays" className="dropdown-item">Sprays</Link>
                             </li>
-                            <li class="">
-                                <Link to="/final-valo/playercard" class="dropdown-item">Player Cards</Link>
+                            <li className="">
+                                <Link to="/final-valo/playercard" className="dropdown-item">Player Cards</Link>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="/final-valo/#about" class="  mx-lg-2 nav-link text-white nav_effect">About US</a>
+                    <li className="nav-item">
+                        <a href="/final-valo/#about" className="  mx-lg-2 nav-link text-white nav_effect">About US</a>
                     </li>
                 </ul>
     
-                {/* <form action="" class="form d-none ">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search.."/>
-                        <span class="input-group-text"><i class="fa-solid fa-magnifying-glass "></i></span>
+                {/* <form action="" className="form d-none ">
+                    <div className="input-group">
+                        <input type="text" className="form-control" placeholder="Search.."/>
+                        <span className="input-group-text"><i className="fa-solid fa-magnifying-glass "></i></span>
                       </div>
                 </form> */}
                 </div>
