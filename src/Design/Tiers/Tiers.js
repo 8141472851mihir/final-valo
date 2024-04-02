@@ -3,7 +3,7 @@ import Footer from "../Common/Footer.js";
 // import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
-import Card from '../../components/Card';
+import CardBuddies from '../../components/CardBuddies';
 import Loader from "../Common/Loader.js";
 
 const Tiers = () => {
@@ -47,7 +47,7 @@ const Tiers = () => {
         <div className="row mt-5">
         {competitivetiers[0]['tiers'].map((Tiers) => (
           Tiers.tier !== 1 && Tiers.tier !==2 ? (
-            <Card imgSrc={Tiers['largeIcon']} title={Tiers['tierName']}  />
+            <CardBuddies imgSrc={Tiers['largeIcon']} title={Tiers['tierName']}  />
           ):null
         ))}
         </div>
