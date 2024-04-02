@@ -3,6 +3,7 @@ import Footer from "../Common/Footer.js";
 // import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import Loader from "../Common/Loader.js";
 
 const Maps = () => {
   const navigate = useNavigate();
@@ -24,7 +25,9 @@ const Maps = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -49,7 +52,7 @@ const Maps = () => {
    setMapInfo('Valorant features a diverse array of meticulously designed maps, each offering unique tactical challenges and strategic opportunities. From the urban streets of Bind to the futuristic facility of Haven, players navigate dynamic environments that demand adaptability and teamwork to emerge victorious. With carefully crafted layouts and strategic chokepoints, Valorant maps provide the perfect battleground for thrilling, high-stakes encounters.');
  }
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
   if (error) {
     return <p>Error: {error.message}</p>;
@@ -78,6 +81,7 @@ const Maps = () => {
           <div className="img_map">
             <div className="ratio ratio-16x9 active">
                 <img src={mapImg} description="Each map is a playground to showcase your creative thinking. Purpose-built for team strategies.Each map is a playground to showcas" alt="Los Angeles" className="d-block w-100 " />
+
             </div>
           </div>
         </div>

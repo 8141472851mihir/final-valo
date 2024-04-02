@@ -3,6 +3,7 @@ import Footer from "../Common/Footer.js";
 import Agentdemo from "./Agentsdemo.js";
 import { useParams } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import Loader from "../Common/Loader.js";
 
 
 const Agentx = () => {
@@ -31,7 +32,9 @@ const Agentx = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -39,7 +42,7 @@ const Agentx = () => {
   }, [uid]);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
 
   if (error) {
@@ -75,56 +78,56 @@ const Agentx = () => {
               <div className="col-12 my-3 ">
                 <h3 className="font_secondary text-white font_primary border-secondary border-bottom">Special Ability</h3>
 
-                <ul class="nav nav-pills my-4 font_secondary text-white">
-                  <li class="nav-item ">
-                    <button class="btn btn-outline-light rounded-0 active btn-square-md" onClick={() => data('a1', 'a2', 'a3', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseOne">Q</button>
+                <ul className="nav nav-pills my-4 font_secondary text-white">
+                  <li className="nav-item ">
+                    <button className="btn btn-outline-light rounded-0 active btn-square-md" onClick={() => data('a1', 'a2', 'a3', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseOne">Q</button>
                   </li>
-                  <li class="nav-item ">
-                    <button class="btn  btn-outline-light rounded-0 btn-square-md" onClick={() => data('a2', 'a1', 'a3', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseTwo">E</button>
+                  <li className="nav-item ">
+                    <button className="btn  btn-outline-light rounded-0 btn-square-md" onClick={() => data('a2', 'a1', 'a3', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseTwo">E</button>
                   </li>
-                  <li class="nav-item ">
-                    <button class="btn  btn-outline-light rounded-0 btn-square-md " onClick={() => data('a3', 'a2', 'a1', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseThree">C</button>
+                  <li className="nav-item ">
+                    <button className="btn  btn-outline-light rounded-0 btn-square-md " onClick={() => data('a3', 'a2', 'a1', 'a4')} data-bs-toggle="pill" data-bs-target="#collapseThree">C</button>
                   </li>
-                  <li class="nav-item ">
-                    <button class="btn  btn-outline-light rounded-0 btn-square-md " onClick={() => data('a4', 'a2', 'a3', 'a1')} data-bs-toggle="pill" data-bs-target="#collapseFour">X</button>
+                  <li className="nav-item ">
+                    <button className="btn  btn-outline-light rounded-0 btn-square-md " onClick={() => data('a4', 'a2', 'a3', 'a1')} data-bs-toggle="pill" data-bs-target="#collapseFour">X</button>
                   </li>
                 </ul>
 
                 <div className="text-white font_secondary">
-                  <div id="a1" class="container p-0">
+                  <div id="a1" className="container p-0">
                     <h4>Q - {agents.abilities[0].displayName}</h4>
                     {agents.abilities[0].description}
                   </div>
-                  <div id="a2" class="container p-0  d-none">
+                  <div id="a2" className="container p-0  d-none">
                     <h4>E - {agents.abilities[1].displayName}</h4>
                     {agents.abilities[1].description}
                   </div>
-                  <div id="a3" class=" container p-0 d-none">
+                  <div id="a3" className=" container p-0 d-none">
                     <h4>C - {agents.abilities[2].displayName}</h4>
                     {agents.abilities[2].description}
                   </div>
-                  <div id="a4" class=" container p-0 d-none">
+                  <div id="a4" className=" container p-0 d-none">
                     <h4>X - {agents.abilities[3].displayName}</h4>
                     {agents.abilities[3].description}
                   </div>
                 </div>
 
-                <div  class="tab-content mt-4">
-                    <div id="collapseOne" class="tab-pane container p-0 active">
-                        {/* <img src={require('../../assets/Website_Gekko_Wingman_Stun_FNL.mp4')} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                      <video class="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['Q']}  width="600vh" autoPlay muted loop></video>
+                <div  className="tab-content mt-4">
+                    <div id="collapseOne" className="tab-pane container p-0 active">
+                        {/* <img src={require('../../assets/Website_Gekko_Wingman_Stun_FNL.mp4')} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['Q']}  width="600vh" autoPlay muted loop></video>
                    </div>
-                    <div id="collapseTwo"  class="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[1].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                    <video class="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['E']} width="600vh" autoPlay muted loop></video>
+                    <div id="collapseTwo"  className="tab-pane p-0 container ">
+                    {/* <img src={agents.abilities[1].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                    <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['E']} width="600vh" autoPlay muted loop></video>
                     </div>
-                    <div id="collapseThree"  class="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[2].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                        <video class="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['C']} width="600vh" autoPlay muted loop></video>
+                    <div id="collapseThree"  className="tab-pane p-0 container ">
+                    {/* <img src={agents.abilities[2].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                        <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['C']} width="600vh" autoPlay muted loop></video>
                       </div>
-                    <div id="collapseFour"  class="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[3].displayIcon} alt="" class="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                    <video class="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['X']} width="600vh" autoPlay muted loop></video>
+                    <div id="collapseFour"  className="tab-pane p-0 container ">
+                    {/* <img src={agents.abilities[3].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
+                    <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['X']} width="600vh" autoPlay muted loop></video>
                     </div>
                    
                 </div>

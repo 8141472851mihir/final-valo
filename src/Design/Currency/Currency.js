@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/CardBuddies';
+import Loader from "../Common/Loader.js";
 
 const Currency = () => {
   const navigate = useNavigate();
@@ -20,7 +21,9 @@ const Currency = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -28,7 +31,7 @@ const Currency = () => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <p><Loader/></p>;
   }
 
   if (error) {
@@ -38,18 +41,18 @@ const Currency = () => {
     <div>
        <>
        <Header />
-            <div class="container mt-5 pt-5">
-            <div class="container p-3 my-5">
-                <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Currency</h1>
+            <div className="container mt-5 pt-5">
+            <div className="container p-3 my-5">
+                <h1 className="col-12 text-center text-light font_primary display-4 text_color_danger">Currency</h1>
             </div>
-            <div class="row justify-content-center mt-5">
+            <div className="row justify-content-center mt-5">
             {currencies.map((currency) => (
                 <Card imgSrc={currency['displayIcon']} title={currency['displayName']} />
             ))}
             </div>
 
             </div>
-            <div class="fixed-bottom">
+            <div className="fixed-bottom">
                 <Footer/>
             </div>
         </>

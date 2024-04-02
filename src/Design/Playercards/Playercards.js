@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/CardPlayerCard';
+import Loader from "../Common/Loader.js";
 
 const Playercard = () => {
     const navigate = useNavigate();
@@ -20,7 +21,9 @@ const Playercard = () => {
         } catch (error) {
           setError(error);
         } finally {
-          setIsLoading(false);
+          setTimeout(() => {
+            setIsLoading(false);
+       }, 1000)
         }
       };
   
@@ -28,7 +31,7 @@ const Playercard = () => {
     }, []);
   
     if (isLoading) {
-      return <p>Loading...</p>;
+      return <p><Loader/></p>;
     }
   
     if (error) {
@@ -39,11 +42,11 @@ const Playercard = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container">
-            <h1 class="col-12 text-center text-light ">Sprays</h1>
+      <div className="container mt-5 pt-5">
+        <div className="container">
+            <h1 className="col-12 text-center text-light ">Player Cards</h1>
         </div>
-        <div class="row mt-5">
+        <div className="row mt-5">
         {Playercards.map((playerCard) => (
             <Card imgSrc={playerCard['largeArt']!==null?playerCard['largeArt']:playerCard['displayIcon']} title={playerCard['displayName']} href="#" />
         ))}

@@ -1,5 +1,6 @@
 import Header from "../Common/Header.js";
 import Footer from "../Common/Footer.js";
+import Loader from "../Common/Loader.js";
 // import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
@@ -22,7 +23,9 @@ const Agents = () => {
       } catch (error) {
         setError(error);
       } finally {
-        setIsLoading(false);
+        setTimeout(() => {
+          setIsLoading(false);
+     }, 2000)
       }
     };
 
@@ -30,7 +33,7 @@ const Agents = () => {
   }, []);
 
   if (isLoading) {
-    return <p>Loading...</p>;
+    return <Loader/>;
   }
 
   if (error) {
@@ -40,13 +43,13 @@ const Agents = () => {
   return (
     <div>
     <Header/>
-    <div class="mt-5 pt-5">
-    <div class="container p-4 my-5">
-        <h1 class="col-12 text_color_danger display-3 display-md-4 text-center text-light font_primary">Valorant Agents</h1>
+    <div className="mt-5 pt-5">
+    <div className="container p-4 my-5">
+        <h1 className="col-12 text_color_danger display-3 display-md-4 text-center text-light font_primary">Agents</h1>
     </div>
-    <div class="container text-light" >
+    <div className="container text-light" >
      
-        <div class="container-fluid p-0   my-1 d-flex flex-wrap">
+        <div className="container-fluid p-0   my-1 d-flex flex-wrap">
             {agents.map((agent) => (
               agent.uuid !== 'ded3520f-4264-bfed-162d-b080e2abccf9' ? (
                   <div key={agent.uuid} className="col-md-4 col-xl-3 col-6 text-center p-1 ">

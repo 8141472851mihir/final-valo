@@ -11,6 +11,7 @@ import Buddies from "./Design/Buddies/Buddies.js";
 import Spray from "./Design/Sprays/Spray.js";
 import Playercard from "./Design/Playercards/Playercards.js";
 import Bundles from "./Design/Weapons/Bundles.js";
+import Page404 from "./Design/Page404.js";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/final-valo/sprays" element={<Spray />}></Route>
         <Route path="/final-valo/playercard" element={<Playercard />}></Route>
         <Route path="/final-valo/bundles" element={<Bundles />}></Route>
+        <Route path="/final-valo/*" element={<Page404 />}></Route>
       </Routes>
       </Router>
       {/* <Download/> */}

@@ -13,7 +13,7 @@ return(
                 <div className="collapse navbar-collapse " id="collapsibleNavbar">
                 <ul className="navbar-nav font_secondary text-white nav_effect ">
                     <li className="nav-item ">
-                        <Link to="/final-valo" className="  mx-lg-2 nav-link active bg-transparent text-white nav_effect">Home</Link>
+                        <Link to="/final-valo/#homepage" className="  mx-lg-2 nav-link active bg-transparent text-white nav_effect">Home</Link>
                     </li>
                     <li className="nav-item">
                         <a href="/final-valo/#patch" className="  mx-lg-2 nav-link text-white nav_effect">Patch Notes</a>

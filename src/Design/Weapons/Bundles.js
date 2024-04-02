@@ -4,6 +4,7 @@ import {Link} from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/CardBuddies';
+import Loader from "../Common/Loader.js";
 
 const Bundles = () => {
     const navigate = useNavigate();
@@ -20,7 +21,9 @@ const Bundles = () => {
         } catch (error) {
           setError(error);
         } finally {
-          setIsLoading(false);
+          setTimeout(() => {
+            setIsLoading(false);
+       }, 1000)
         }
       };
   
@@ -28,7 +31,7 @@ const Bundles = () => {
     }, []);
   
     if (isLoading) {
-      return <p>Loading...</p>;
+      return <p><Loader/></p>;
     }
   
     if (error) {
@@ -39,11 +42,11 @@ const Bundles = () => {
   return (
     <div>
       <Header/>
-      <div class="container mt-5 pt-5">
-        <div class="container p-4 my-5">
-            <h1 class="col-12 text-center text-light font_primary display-4 text_color_danger">Bundles</h1>
+      <div className="container mt-5 pt-5">
+        <div className="container p-4 my-5">
+            <h1 className="col-12 text-center text-light font_primary display-4 text_color_danger">Bundles</h1>
         </div>
-        <div class="row mt-5">
+        <div className="row mt-5">
         {bundles.map((Bundles) => (
             <Card imgSrc={Bundles['displayIcon']} title={Bundles['displayName']} href="#" />
         ))}
