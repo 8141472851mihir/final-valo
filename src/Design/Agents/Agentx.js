@@ -17,7 +17,6 @@ const Agentx = () => {
     var element3 = document.getElementById(d);
     element3.classList.add("d-none");
   };
-
   const { uid } = useParams();
   const [agents, setAgents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -42,11 +41,11 @@ const Agentx = () => {
   }, [uid]);
 
   if (isLoading) {
-    return <p><Loader/></p>;
+    return <div><Loader/></div>;
   }
 
   if (error) {
-    return <p>Error: {error.message}</p>;
+    return <div>Error: {error.message}</div>;
   }
 
   return (<>
@@ -114,20 +113,16 @@ const Agentx = () => {
 
                 <div  className="tab-content mt-4">
                     <div id="collapseOne" className="tab-pane container p-0 active">
-                        {/* <img src={require('../../assets/Website_Gekko_Wingman_Stun_FNL.mp4')} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['Q']}  width="600vh" autoPlay muted loop></video>
+                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['Q']?Agentdemo[agents.displayName]['Q']:Agentdemo["All"]['Q']}  width="600vh" autoPlay muted loop></video>
                    </div>
                     <div id="collapseTwo"  className="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[1].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                    <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['E']} width="600vh" autoPlay muted loop></video>
+                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['E']?Agentdemo[agents.displayName]['E']:Agentdemo["All"]['E']} width="600vh" autoPlay muted loop></video>
                     </div>
                     <div id="collapseThree"  className="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[2].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                        <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['C']} width="600vh" autoPlay muted loop></video>
-                      </div>
+                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['C']?Agentdemo[agents.displayName]['C']:Agentdemo["All"]['C']} width="600vh" autoPlay muted loop></video>
+                    </div>
                     <div id="collapseFour"  className="tab-pane p-0 container ">
-                    {/* <img src={agents.abilities[3].displayIcon} alt="" className="img-thumbnail bg-danger border-danger p-2" height="300vh" width="600vh"/> */}
-                    <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['X']} width="600vh" autoPlay muted loop></video>
+                      <video className="img-thumbnail bg-danger border-danger rounded-0 p-1" src={Agentdemo[agents.displayName]['X']?Agentdemo[agents.displayName]['X']:Agentdemo["All"]['X']} width="600vh" autoPlay muted loop></video>
                     </div>
                    
                 </div>

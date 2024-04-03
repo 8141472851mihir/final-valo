@@ -119,6 +119,12 @@ import Fade_E from './assets/Fade_E.mp4';
 import Fade_C from './assets/Fade_C.mp4';
 import Fade_X from './assets/Fade_X.mp4';
 const Agentdemo = {
+    "All": {
+        "Q": Brimstone_Q,
+        "E": Brimstone_E,
+        "C": Brimstone_C,
+        "X": Brimstone_X
+    },
     "Brimstone": {
         "Q": Brimstone_Q,
         "E": Brimstone_E,
